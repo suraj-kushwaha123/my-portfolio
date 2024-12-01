@@ -89,8 +89,8 @@ function App() {
       <section id="hobbies" className="hobbies">
         <h2>My Interests</h2>
         <p>
-          When I'm not coding, I enjoy <span className="highlight">traveling</span>,{" "}
-          <span className="highlight">reading tech blogs</span>, and exploring new cuisines.
+          When I'm not coding, I enjoy <span className="highlight">traveling , playing outdoor games </span>,{" "}
+          <span className="highlight">online games</span>, and exploring new cuisines.
         </p>
       </section>
 
