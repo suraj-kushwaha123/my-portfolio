@@ -60,7 +60,7 @@ function App() {
       <section id="achievements" className="achievements">
         <h2>Achievements</h2>
         <ul>
-          <li>Internshala Certified Associate Android Developer</li>
+          <li>Internshala Certified Android Developer</li>
           <li>Published 1 app on google play store</li>
           <li>achievement 3 </li>
         </ul>
