@@ -17,13 +17,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 6rem;
+  padding: 2rem 4rem; /* Reduced padding for better balance */
   background: linear-gradient(135deg, #3038d8, #3eb5cd);
   color: white;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   gap: 2rem;
-  height: 75vh;
+  min-height: 70vh; /* Adjusted height for responsiveness */
   position: relative;
   overflow: hidden;
 }
@@ -39,6 +39,7 @@ body {
   z-index: 0;
 }
 
+/* Hero Content */
 .hero-content {
   flex: 1;
   text-align: left;
@@ -46,7 +47,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3rem; /* Adjusted font size */
   font-weight: 700;
   margin: 0 0 1rem 0;
   color: #fff;
@@ -55,15 +56,16 @@ body {
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: 1rem; /* Reduced font size for better balance */
+  line-height: 1.8;
   color: #f0f0f0;
   animation: fadeInUp 1.4s ease-out;
 }
 
+/* Button */
 .btn-primary {
-  padding: 0.8rem 2.5rem;
-  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
   font-weight: bold;
   background: linear-gradient(to right, #ff6a00, #ee0979);
   color: white;
@@ -79,8 +81,9 @@ body {
   box-shadow: 0 6px 20px rgba(238, 9, 121, 0.6);
 }
 
+/* Hero Photo */
 .hero-photo {
-  flex: 0.8;
+  flex: 0.9; /* Slightly adjusted flex for a better layout */
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -88,17 +91,20 @@ body {
 }
 
 .profile-photo {
-  width: 240px;
-  height: 320px;
+  width: 260px; /* Larger size for emphasis */
+  height: 340px;
   border-radius: 15px;
+  border: 5px solid transparent; /* Base border */
+  background: linear-gradient(135deg, #ff9d00, #ff4b6b); /* Gradient border effect */
+  padding: 5px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-  border: 5px solid rgba(255, 255, 255, 0.8);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
 }
 
 .profile-photo:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.8); /* Glowing effect */
 }
 
 /* About Me Section */
@@ -590,41 +596,24 @@ body {
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column; /* Stack content vertically */
-    text-align: center; /* Center-align text */
-    padding: 2rem 1.5rem;
-    height: auto; /* Allow height to adjust automatically */
-  }
-
-  .hero-content {
-    margin-bottom: 1.5rem; /* Add spacing between text and image */
+    flex-direction: column;
+    padding: 2rem;
+    min-height: auto; /* Allow height to adjust */
   }
 
   .hero-content h1 {
-    font-size: 2.5rem; /* Adjust heading size */
-    line-height: 1.2; /* Improve spacing */
+    font-size: 2.5rem;
   }
 
   .hero-content p {
-    font-size: 1rem; /* Smaller paragraph font */
-    line-height: 1.6; /* Improve readability */
-  }
-
-  .btn-primary {
-    font-size: 1rem;
-    padding: 0.8rem 2rem; /* Adjust button padding */
-  }
-
-  .hero-photo {
-    flex: none; /* Remove unnecessary flex properties */
-    margin: 0 auto; /* Center-align image */
+    font-size: 0.9rem;
   }
 
   .profile-photo {
-    width: 80%; /* Responsive width */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: 260px;
   }
-
+}
   /* Other Sections */
   .about, .skills, .contact, .achievements, .projects, .hobbies {
     padding: 30px 15px; /* Reduce padding for smaller screens */
@@ -649,6 +638,6 @@ body {
     width: 100%; /* Make cards responsive */
     margin: 0 auto; /* Center-align cards */
   }
-}
+
 
 

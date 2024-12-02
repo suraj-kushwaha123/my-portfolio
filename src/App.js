@@ -18,7 +18,7 @@ function App() {
         </div>
         <div className="hero-photo">
           <img
-            src="https://via.placeholder.com/180x260"
+            src="https://professional-portfolio123.netlify.app/images/vector-art.png"
             alt="Suraj Kushwaha"
             className="profile-photo"
           />
