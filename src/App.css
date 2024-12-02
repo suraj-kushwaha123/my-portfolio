@@ -131,7 +131,7 @@ body {
   display: block;
   width: 80px;
   height: 4px;
-  background: #48bfe3;
+  background: #68bfda;
   margin: 15px auto;
   border-radius: 2px;
 }
@@ -154,7 +154,7 @@ body {
 .about-content p .highlight {
   color: #5e60ce;
   font-weight: bold;
-  background: linear-gradient(to right, #ffd166, #06d6a0);
+  background: linear-gradient(to right, #599ce8, #1baa83);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; /* Gradient text */
